@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:maxWidth="162dp"
+    android:maxHeight="128dp">
+
+    <Button
+        android:id="@+id/pop_up_button_create_task"
+        style="@style/sub_text_simple"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginTop="9dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_note_accept"
+        android:drawableTint="@color/black"
+        android:paddingHorizontal="10dp"
+        android:text="@string/pop_up_menu1_create_task_button"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

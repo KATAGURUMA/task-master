@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="365dp"
+    android:layout_height="64dp"
+    tools:ignore="ExtraText"
+    android:elevation="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/icon_list"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="18dp"
+        app:cardCornerRadius="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/task_work" />
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/pview_text_salut"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_item"
+        style="@style/text_simple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/home_list_name"
+        app:layout_constraintStart_toEndOf="@+id/icon_list"
+        app:layout_constraintTop_toTopOf="@+id/pview_text_salut" />
+
+    <TextView
+        android:id="@+id/number_task"
+        style="@style/sub_text_simple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_task_count_1"
+        android:textColor="@color/blue_gray"
+        app:layout_constraintStart_toStartOf="@+id/name_item"
+        app:layout_constraintTop_toBottomOf="@+id/name_item" />
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="20dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="18dp"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

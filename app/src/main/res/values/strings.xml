@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">TaskMaster</string>
+
+    <string name="bottom_task_item">Tâches</string>
+    <string name="bottom_calendar_item">Calendar</string>
+    <string name="bottom_notif_item">Notifications</string>
+    <string name="bottom_profil_item">Profil</string>
+
+    <!--login-->
+    <string name="login_title">Simplifiez la gestion de vos tâches au quotidien</string>
+    <string name="login_button_google">Continuer avec Google</string>
+    <string name="login_mail_input">Adresse mail</string>
+    <string name="login_password_input">Mot de passe</string>
+    <string name="login_button_connexion">Connexion</string>
+    <string name="login_cgd">En continuant, vous acceptez les Conditions d’utilisation et la Politique de confidentialité de TaskMaster.</string>
+
+    <!--login 2 ajout photo et lancer TaskMaster-->
+    <string name="login2_mini_text">Félicitations ! Vous avez fait vos premiers pas vers une meilleure organisation.</string>
+    <string name="login2_mini_title">Votre profil</string>
+    <string name="login_button_upload_photo">Télécharger une photo</string>
+    <string name="login2_name_input">Votre nom</string>
+    <string name="login2_button_start">Lancer TaskMaster</string>
+
+    <!--home-->
+    <string name="home_hello">Salut,</string>
+    <string name="home_name">Alexandre</string>
+    <string name="home_search">Rechercher</string>
+    <string name="home_list_section">Mes listes</string>
+    <string name="home_list_name">Nom de la liste</string>
+    <string name="home_task_count_1">nombre de taches</string>
+    <string name="home_task_button">Créer une tâche</string>
+
+
+    <!--Créer votre tâche-->
+    <string name="create_task_page_title">Créez votre tâche</string>
+    <string name="create_task_page_task_name_input">Nom de la tâche </string>
+    <string name="create_task_page_description_input">Description</string>
+    <string name="create_task_page_option_label_date">Date</string>
+    <string name="create_task_page_option_label_hour">Heure</string>
+    <string name="create_task_page_option_label_list">liste</string>
+    <string name="create_task_page_option_label_priority">priorité</string>
+    <string-array name="create_task_page_option_priority">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="create_task_spage_button_add_photo">Ajouter une photo</string>
+    <string name="create_task_spage_button_add_task">Ajouter</string>
+
+    <!--list page-->
+    <string name="list_page_title">@string/home_list_name</string>
+    <string name="list_page_task_name">@string/create_task_page_task_name_input</string>
+    <string name="list_page_create_task_button">Créer une tâche_</string>
+
+    <!--task page-->
+    <string name="task_page_title">@string/create_task_page_task_name_input</string>
+    <string name="task_page_list_task">@string/home_list_name</string>
+    <string name="task_page_list_description">@string/create_task_page_description_input</string>
+    <string name="task_page_subtitle_time">temps restant</string>
+    <string name="task_page_subtitle_time_detail1">JJ-</string>
+    <string name="task_page_subtitle_time_detail2">Heure</string>
+
+    <!--task modify page-->
+    <string name="task_page_modify_upload_button">Modifier la photo</string>
+    <string name="task_page_modify_save_button">Enregistrer</string>
+
+    <!--pop up menu1-->
+    <string name="pop_up_menu1_create_task_button">Créer une tâche</string>
+    <string name="pop_up_menu1_rename_task_button">Renommer</string>
+    <string name="pop_up_menu1_change_icon_button">Changer l\'icône </string>
+    <string name="pop_up_menu1_delete_button">Supprimer</string>
+
+    <!--pop up menu2-->
+    <string name="pop_up_menu2_modify_button">Modifier</string>
+    <string name="pop_up_menu2_delete_button">Supprimer</string>
+
+    <!--pop up supprimer une tâche-->
+    <string name="pop_up_delete_task_text">Voulez-vous vraiment supprimer cette tâche?</string>
+    <string name="pop_up_delete_confirm_button">Confirmer</string>
+    <string name="pop_up_delete_return_button">Annuler</string>
+
+    <!--pop up supprimer une liste-->
+    <string name="pop_up_delete_list_text">Voulez-vous vraiment supprimer cette liste?</string>
+
+    <!--pop up tâche modifié avec succès-->
+    <string name="pop_up_task_modify_text">Tâche modifiée !</string>
+
+    <!--pop up tâche créé avec succès-->
+    <string name="pop_up_task_create_title">Bien joué ! Une nouvelle tâche !</string>
+    <string name="pop_up_task_create_text">Restons concentré(e) à fin de l’exécuter à temps.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

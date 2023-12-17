@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/task_page"
+        android:title="@string/bottom_task_item"
+        android:icon="@drawable/ic_task_list" />
+    <item
+        android:id="@+id/calendrier_page"
+        android:title="@string/bottom_calendar_item"
+        android:icon="@drawable/ic_calendar" />
+    <item
+        android:id="@+id/notification_page"
+        android:title="@string/bottom_notif_item"
+        android:icon="@drawable/ic_cloche_notification" />
+    <item
+        android:id="@+id/profil_page"
+        android:title="@string/bottom_profil_item"
+        android:icon="@drawable/ic_user" />
+</menu>
