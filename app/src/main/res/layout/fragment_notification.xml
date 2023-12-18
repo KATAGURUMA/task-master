@@ -7,10 +7,34 @@
     tools:context=".fragment.NotificationFragment">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        style="@style/titre_black"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Notification" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
+        android:orientation="vertical"
         android:gravity="center"
-        android:text="Notification" />
+        >
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/no_notification"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            style="@style/text_black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Aucune notification pour le moment." />
+
+    </LinearLayout>
+
+
 
 </FrameLayout>

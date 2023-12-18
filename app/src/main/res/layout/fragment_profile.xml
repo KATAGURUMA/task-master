@@ -3,14 +3,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fragment_profile"
     tools:context=".fragment.ProfileFragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Profile" />
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            style="@style/titre_black"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Profile" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="206dp"
+            android:layout_height="206dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo_profil" />
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="330dp"
+            android:layout_height="38dp"
+            style="@style/titre_simple_black"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/login_mail_input"
+            android:minHeight="48dp"
+            android:paddingHorizontal="20dp"
+            android:text="Alexandre NKOUNDE"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            style="@style/titre_simple_black"
+            android:layout_width="330dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/login_mail_input"
+            android:minHeight="48dp"
+            android:paddingHorizontal="20dp"
+            android:text="alexandrenk@gmail.com"
+            android:textColorHint="@color/black" />
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+            
+            <View
+                android:layout_width="155dp"
+                android:layout_height="130dp"
+                android:background="#53F7C90D"
+                android:layout_marginEnd="20dp"
+                />
+
+
+            <View
+                android:layout_width="155dp"
+                android:layout_height="130dp"
+                android:background="#530846A0"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
 
 </FrameLayout>

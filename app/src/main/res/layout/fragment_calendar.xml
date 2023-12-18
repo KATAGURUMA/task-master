@@ -1,16 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/fragment_calendar"
     tools:context=".fragment.CalendarFragment">
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:context=".CalendarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        tools:context=".CalendarFragment">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/titre_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Calendrier"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/pview_text_salut" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
         android:gravity="center"
-        android:text="Calendar" />
+        tools:context=".CalendarFragment">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weekDayTextAppearance="@style/text_black"
+            android:dateTextAppearance="@style/text_black"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:selectedWeekBackgroundColor="#3F51B5"/>
+
+        <TextView
+            android:id="@+id/none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/blue_gray"
+            android:text="Aucune tâche prévue aujourd'hui !" />
+    </LinearLayout>
+    </LinearLayout>
 
 </FrameLayout>
